@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left{
+       position: absolute;
+       left: 0;
+       background-color:palevioletred;
+       background-image: url("https://darlingretail.com/cdn/shop/files/1_a496968a-2877-41ca-8fee-30573339ba3a_600x.webp?v=1726057077");
+       background-size: cover;
+       
+}
+
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color:lightskyblue ;
+    background-image: url("https://www.designinfo.in/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra-256GB-Titanium-Violet-3.webp");
+    background-size: cover;
+
+    
+
+}
+
+h1{
+    font-size: 100px;
+    color:blueviolet;
+    letter-spacing: 5px;
+}
+
+.btn{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.active-left .left{
+    width: 75%;
+}
+
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
+
+.left , .right{
+    transition: width 2s ease-in-out;
+}
